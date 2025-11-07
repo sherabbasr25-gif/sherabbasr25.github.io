@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Engineer Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- index.html -->
+<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+
+<body>
+  <!-- Floating Photo Animation -->
+  <img src="my_photo.jpg" alt="Floating Photo" class="floating-photo" />
+
+  <!-- Header Section -->
+  <header class="main-header">
+    <div class="logo">SHER ABBAS</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="section-card">
+    <h2>About Me</h2>
+    <p>I’m an AI Engineer with experience in Machine Learning, Deep Learning, and Web Development.</p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section-card">
+    <h2>Projects</h2>
+    <div class="project-list">
+      <div class="project-card">
+        <h3>AI Chatbot</h3>
+        <img src="Ai-Cont-crete.png" />
+
+        <p>Built with Python and NLP libraries for real-time Q&A.</p>
+      </div>
+      <div class="project-card">
+        <h3>Image Classifier</h3>
+        <p>Trained with CNN and deployed using Flask.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section-card">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">Python</div>
+      <div class="skill-card">TensorFlow</div>
+      <div class="skill-card">PyTorch</div>
+      <div class="skill-card">Scikit-learn</div>
+      <div class="skill-card">Flask</div>
+      <div class="skill-card">FastAPI</div>
+      <div class="skill-card">Pandas</div>
+      <div class="skill-card">Numpy</div>
+      <div class="skill-card">OpenCV</div>
+      <div class="skill-card">NLTK / SpaCy</div>
+      <div class="skill-card">Git & GitHub</div>
+      <div class="skill-card">SQL / MongoDB</div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section-card">
+    <h2>Contact</h2>
+    <p>Email: sherabbasr25@gmail.com</p>
+    <p>You can reach me via WhatsApp or Facebook:</p>
+    <a href="https://wa.me/923152325325" target="_blank" class="whatsapp-button">
+      <i class="fab fa-whatsapp"></i> WhatsApp Me
+    </a>
+    <a href="https://web.facebook.com/profile.php?id=100014564294432&sk=about" target="_blank" class="facebook-button">
+      <i class="fab fa-facebook"></i> Facebook Profile
+    </a>
+    <!-- <form action="/contact" method="POST" class="contact-form">
+  <input type="text" name="name" placeholder="Your Name" required />
+  <input type="email" name="email" placeholder="Your Email" required />
+  <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+  <button type="submit" class="whatsapp-button">Send Message</button>
+</form> -->
+<!-- {% with messages = get_flashed_messages(with_categories=true) %}
+  {% if messages %} -->
+    <!-- <ul class="flashes"> -->
+      <!-- {% for category, message in messages %} -->
+        <!-- <li class="{{ category }}">{{ message }}</li> -->
+      <!-- {% endfor %} -->
+    <!-- </ul> -->
+  <!-- {% endif %}
+{% endwith %} -->
+
+
+  </section>
+  <!-- Comment Section -->
+<!-- <section id="comment" class="section-card">
+  <h2>Leave a Comment</h2>
+  <form action="/submit-comment" method="POST">
+    <textarea name="comment" rows="4" placeholder="Write your comment here..." required></textarea><br>
+    <button type="submit">Send</button>
+  </form>
+</section> -->
+
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 SHER ABBAS</p>
+  </footer>
+</body>
+</html>
